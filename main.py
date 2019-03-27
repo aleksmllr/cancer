@@ -20,6 +20,7 @@ df2.shape
 df3.shape
 
 
+df1 = df1.drop([column for column in df1.columns if 'call' in column], axis=1).T
 df2 = df2.drop([column for column in df2.columns if 'call' in column], axis=1).T
 
 df2.head(15)
