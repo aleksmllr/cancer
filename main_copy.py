@@ -1,4 +1,4 @@
-# Importing useful packages to make life easy
+# testing first commit
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -63,8 +63,6 @@ y_test = test.iloc[:, 0].values
 # Instantiate standard scaler and PCA
 sc = StandardScaler()
 
-
-
 X_train_std = sc.fit_transform(X_train)
 
 X_test_std = sc.transform(X_test)
@@ -77,7 +75,7 @@ pca = PCA(n_components=30)
 
 pComponents = pca.fit_transform(X_train)
 
-#pca.explained_variance_ratio_.shape
+pca.explained_variance_ratio_.shape
 
 var_exp = pca.explained_variance_ratio_
 
